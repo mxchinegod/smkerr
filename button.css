@@ -156,3 +156,6 @@
   --span-opacity: 1;
   --span-x: 0;
 }
+a, a:hover {
+    color: #ef3c51;
+}
