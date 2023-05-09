@@ -1,85 +1,85 @@
 .heart-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3D(-50%, -50%, 0);
-    -webkit-appearance: none;
-    appearance: none;
-    cursor: pointer;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 24px;
-    line-height: 80px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #fff;
-    border: 2px solid #fe2d7c;
-    padding: 0 80px;
-    height: 80px;
-    background-color: #ff468c;
-    overflow: hidden;
-    transition: all 0.55s cubic-bezier(0.46, 0.01, 0.32, 1);
-  }
-  .btn:hover {
-    color: #ff1c4d;
-  }
-  .btn:hover .heart,
-  .btn:hover .heart-outer {
-    transform: translate3D(-50%, -50%, 0) rotate(-45deg) scale(12);
-  }
-  
-  .btn-text {
-    position: relative;
-    z-index: 10;
-  }
-  
-  .heart,
-  .heart-outer {
-    position: absolute;
-    left: 50%;
-    transform: translate3D(-50%, -50%, 0) rotate(-45deg) scale(0);
-    z-index: 5;
-    transition: transform 0.55s cubic-bezier(0.46, 0.01, 0.32, 1);
-  }
-  .heart:before, .heart:after,
-  .heart-outer:before,
-  .heart-outer:after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-  }
-  .heart:before,
-  .heart-outer:before {
-    left: 0;
-  }
-  
-  .heart {
-    background-color: #fff;
-    top: 60%;
-    left: 50%;
-    height: 20px;
-    width: 20px;
-  }
-  .heart:before, .heart:after {
-    background-color: #fff;
-    height: 20px;
-    width: 20px;
-  }
-  .heart:before {
-    top: -10px;
-  }
-  
-  .heart-outer {
-    width: 30px;
-    height: 30px;
-    background-color: #ffc0d8;
-    z-index: 1;
-    top: 62%;
-  }
-  .heart-outer:before, .heart-outer:after {
-    width: 30px;
-    height: 30px;
-    background-color: #ffc0d8;
-  }
-  .heart-outer:before {
-    top: -15px;
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3D(-50%, -50%, 0);
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 80px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  border: 2px solid #fe2d7c;
+  padding: 0 80px;
+  height: 80px;
+  background-color: #ff468c;
+  overflow: hidden;
+  transition: all 0.55s cubic-bezier(0.46, 0.01, 0.32, 1);
+}
+.heart-btn:hover {
+  color: #fe2d7c;
+}
+.heart-btn:hover .heart,
+.heart-btn:hover .heart-outer {
+  transform: translate3D(-50%, -50%, 0) rotate(-45deg) scale(12);
+}
+
+.heart-btn-text {
+  position: relative;
+  z-index: 10;
+}
+
+.heart,
+.heart-outer {
+  position: absolute;
+  left: 50%;
+  transform: translate3D(-50%, -50%, 0) rotate(-45deg) scale(0);
+  z-index: 5;
+  transition: transform 0.55s cubic-bezier(0.46, 0.01, 0.32, 1);
+}
+.heart:before, .heart:after,
+.heart-outer:before,
+.heart-outer:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.heart:before,
+.heart-outer:before {
+  left: 0;
+}
+
+.heart {
+  background-color: #fff;
+  top: 60%;
+  left: 50%;
+  height: 20px;
+  width: 20px;
+}
+.heart:before, .heart:after {
+  background-color: #fff;
+  height: 20px;
+  width: 20px;
+}
+.heart:before {
+  top: -10px;
+}
+
+.heart-outer {
+  width: 30px;
+  height: 30px;
+  background-color: #ffc0d8;
+  z-index: 1;
+  top: 62%;
+}
+.heart-outer:before, .heart-outer:after {
+  width: 30px;
+  height: 30px;
+  background-color: #ffc0d8;
+}
+.heart-outer:before {
+  top: -15px;
+}
