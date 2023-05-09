@@ -1,85 +1,209 @@
-.heart-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3D(-50%, -50%, 0);
-  -webkit-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  line-height: 80px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #fff;
-  border: 2px solid #fe2d7c;
-  padding: 0 80px;
-  height: 80px;
-  background-color: #ff468c;
-  overflow: hidden;
-  transition: all 0.55s cubic-bezier(0.46, 0.01, 0.32, 1);
-}
-.heart-btn:hover {
-  color: #fe2d7c;
-}
-.heart-btn:hover .heart,
-.heart-btn:hover .heart-outer {
-  transform: translate3D(-50%, -50%, 0) rotate(-45deg) scale(12);
-}
-
-.heart-btn-text {
-  position: relative;
-  z-index: 10;
-}
-
 .heart,
-.heart-outer {
-  position: absolute;
-  left: 50%;
-  transform: translate3D(-50%, -50%, 0) rotate(-45deg) scale(0);
-  z-index: 5;
-  transition: transform 0.55s cubic-bezier(0.46, 0.01, 0.32, 1);
+.heart-button {
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
 }
-.heart:before, .heart:after,
-.heart-outer:before,
-.heart-outer:after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
+.heart .heart-flip,
+.heart-button .heart-flip {
+  --base: 32px;
+  --duration: .6s;
+  --active: #ea4673;
+  --inactive: #d1d6ee;
+  width: var(--base);
+  height: calc(var(--base) + var(--base) / 2);
+  border-radius: calc(var(--base) / 2) calc(var(--base) / 2) 0 0;
+  position: relative;
+  -webkit-transform-origin: 50% 66.66%;
+          transform-origin: 50% 66.66%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotate(var(--rotate, -45deg));
+          transform: rotate(var(--rotate, -45deg));
+  -webkit-transition: background var(--duration), -webkit-transform var(--duration) ease;
+  transition: background var(--duration), -webkit-transform var(--duration) ease;
+  transition: background var(--duration), transform var(--duration) ease;
+  transition: background var(--duration), transform var(--duration) ease, -webkit-transform var(--duration) ease;
+  background: var(--heart-background, var(--inactive));
 }
-.heart:before,
-.heart-outer:before {
-  left: 0;
+.heart .heart-flip:before, .heart .heart-flip:after,
+.heart-button .heart-flip:before,
+.heart-button .heart-flip:after {
+  content: '';
+  width: calc(var(--base) / 2);
+  height: var(--base);
+  border-radius: var(--pseudo-border-radius, calc(var(--base) / 2) 0 0 calc(var(--base) / 2));
+  position: absolute;
+  left: var(--pseudo-left, -50%);
+  -webkit-transform-origin: var(--pseudo-origin, 100%) 50%;
+          transform-origin: var(--pseudo-origin, 100%) 50%;
+  bottom: 0;
+  background: var(--heart-background, var(--inactive));
+  -webkit-filter: brightness(var(--pseudo-filter, 50%));
+          filter: brightness(var(--pseudo-filter, 50%));
+  -webkit-transform: translateX(1%) rotateY(var(--pseudo-rotate, 90deg)) translateZ(0);
+          transform: translateX(1%) rotateY(var(--pseudo-rotate, 90deg)) translateZ(0);
+  -webkit-transition: background var(--duration), -webkit-transform var(--duration) ease, -webkit-filter var(--duration);
+  transition: background var(--duration), -webkit-transform var(--duration) ease, -webkit-filter var(--duration);
+  transition: background var(--duration), transform var(--duration) ease, filter var(--duration);
+  transition: background var(--duration), transform var(--duration) ease, filter var(--duration), -webkit-transform var(--duration) ease, -webkit-filter var(--duration);
+}
+.heart .heart-flip:after,
+.heart-button .heart-flip:after {
+  --pseudo-border-radius: 0 calc(var(--base) / 2) calc(var(--base) / 2) 0;
+  --pseudo-left: 100%;
+  --pseudo-origin: 0;
+  -webkit-filter: brightness(var(--pseudo-filter-second, 100%));
+          filter: brightness(var(--pseudo-filter-second, 100%));
+  -webkit-transform: translateX(-1%) rotateY(var(--pseudo-rotate-second, 0deg)) translateZ(0);
+          transform: translateX(-1%) rotateY(var(--pseudo-rotate-second, 0deg)) translateZ(0);
+}
+.heart.active .heart-flip,
+.heart-button.active .heart-flip {
+  --rotate: 45deg;
+  --pseudo-filter: 100%;
+  --pseudo-filter-second: 50%;
+  --pseudo-rotate: 0deg;
+  --pseudo-rotate-second: 90deg;
+  --heart-background: var(--active);
 }
 
 .heart {
-  background-color: #fff;
-  top: 60%;
-  left: 50%;
-  height: 20px;
-  width: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  -webkit-transform: scale(var(--button-scale, 1)) translateZ(0);
+          transform: scale(var(--button-scale, 1)) translateZ(0);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
-.heart:before, .heart:after {
-  background-color: #fff;
-  height: 20px;
-  width: 20px;
-}
-.heart:before {
-  top: -10px;
+.heart:active {
+  --button-scale: .95;
 }
 
-.heart-outer {
-  width: 30px;
-  height: 30px;
-  background-color: #ffc0d8;
-  z-index: 1;
-  top: 62%;
+.heart-button {
+  --duration: .4s;
+  --color: #404660;
+  --color-hover: #2b3044;
+  --color-active: #fff;
+  --border: #d1d6ee;
+  --border-hover: #bbc1e1;
+  --border-active: #ea4673;
+  --background: #fff;
+  --background-active: #ea4673;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 7px;
+  color: var(--button-color, var(--color));
+  border: 1px solid var(--button-border, var(--border));
+  background: var(--button-background, var(--background));
+  -webkit-transform: scale(var(--button-scale, 1)) translateZ(0);
+          transform: scale(var(--button-scale, 1)) translateZ(0);
+  -webkit-transition: background var(--duration), border-color var(--duration), color var(--duration), -webkit-transform 0.2s;
+  transition: background var(--duration), border-color var(--duration), color var(--duration), -webkit-transform 0.2s;
+  transition: background var(--duration), border-color var(--duration), color var(--duration), transform 0.2s;
+  transition: background var(--duration), border-color var(--duration), color var(--duration), transform 0.2s, -webkit-transform 0.2s;
 }
-.heart-outer:before, .heart-outer:after {
-  width: 30px;
-  height: 30px;
-  background-color: #ffc0d8;
+.heart-button .heart-flip {
+  --base: 8px;
+  --active: #fff;
+  --inactive: #bbc1e1;
+  display: inline-block;
+  vertical-align: top;
+  margin: 4px 6px 0 0;
 }
-.heart-outer:before {
-  top: -15px;
+.heart-button span {
+  display: inline-block;
+  vertical-align: top;
+}
+.heart-button > span {
+  -webkit-transform: translateX(var(--text-x, 4px));
+          transform: translateX(var(--text-x, 4px));
+  -webkit-transition: -webkit-transform var(--duration);
+  transition: -webkit-transform var(--duration);
+  transition: transform var(--duration);
+  transition: transform var(--duration), -webkit-transform var(--duration);
+}
+.heart-button > span span {
+  display: inline-block;
+  vertical-align: top;
+  opacity: var(--span-opacity, 0);
+  -webkit-transform: translateX(var(--span-x, 4px));
+          transform: translateX(var(--span-x, 4px));
+  -webkit-transition: opacity var(--duration), -webkit-transform var(--duration);
+  transition: opacity var(--duration), -webkit-transform var(--duration);
+  transition: opacity var(--duration), transform var(--duration);
+  transition: opacity var(--duration), transform var(--duration), -webkit-transform var(--duration);
+}
+.heart-button:active {
+  --button-scale: .95;
+}
+.heart-button:hover {
+  --button-color: var(--color-hover);
+  --button-border: var(--border-hover);
+}
+.heart-button.active {
+  --text-x: 0;
+  --button-color: var(--color-active);
+  --button-border: var(--border-active);
+  --button-background: var(--background-active);
+  --span-opacity: 1;
+  --span-x: 0;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Inter', Arial;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  background: #F6F8FF;
+}
+body .heart-button {
+  margin-top: 40px;
+}
+body .dribbble {
+  position: fixed;
+  display: block;
+  right: 20px;
+  bottom: 20px;
+}
+body .dribbble img {
+  display: block;
+  height: 28px;
+}
+body .twitter {
+  position: fixed;
+  display: block;
+  right: 64px;
+  bottom: 14px;
+}
+body .twitter svg {
+  width: 32px;
+  height: 32px;
+  fill: #1da1f2;
 }

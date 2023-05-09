@@ -48,10 +48,11 @@
               an adventurer. She has published essays in FringeWare Review, the Sun, and JAMA. For five years she
               wrote a medical column in the Santa Rosa Press Democrat, and she has written on the safe and
               appropriate use of cannabis as medicine for the blog Hawaiian Ethos.</p>
-              <button class="heart-btn" type="submit">
-                <span class="heart"></span>
-                <span class="heart-outer"></span>
-                <span class="heart-btn-text">Learn More</span>
+
+
+               <button class="heart-button">
+                <div class="heart-flip"></div>
+                <span>Learn<span> More</span></span>
               </button>
           </div>
         </div>
@@ -75,7 +76,7 @@
                   <button class="heart-btn" type="submit">
                     <span class="heart"></span>
                     <span class="heart-outer"></span>
-                    <span class="heart-btn-text">Buy Now!</span>
+                    <span class="btn-text">Sign Up</span>
                   </button>
               </div>
             </div>
@@ -139,7 +140,7 @@
                 <button class="heart-btn" type="submit">
                   <span class="heart"></span>
                   <span class="heart-outer"></span>
-                  <span class="heart-btn-text">Sign Up</span>
+                  <span class="btn-text">Sign Up</span>
                 </button>
               </div>
             </form>
@@ -154,6 +155,9 @@
       <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
     </div>
   </footer>
+  <script>
+    document.querySelectorAll('.heart, .heart-button').forEach(button => button.addEventListener('click', e => button.classList.toggle('active')));
+  </script>
   <!-- Bootstrap core JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
