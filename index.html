@@ -67,100 +67,65 @@
     </div>
   </header>
   <main>
-    <section id="banner" class="d-flex justify-content-center align-items-center text-center text-white"
-      style="background-size: cover; height: 500px;">
-      <div class="container">
-        <div style="margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        display: -webkit-flex;
-        justify-content: center;
-      -webkit-justify-content: center;
-        align-items: center;
-      -webkit-align-items: center;">
-          <div class="carousel">
-            <div class="carousel__nav">
-              <span id="moveLeft" class="carousel__arrow">
-                <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
-                  <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
-                </svg>
-              </span>
-              <span id="moveRight" class="carousel__arrow">
-                <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
-                  <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
-                </svg>
-              </span>
-            </div>
-            <div class="carousel-item carousel-item--1">
-              <div class="carousel-item__image"></div>
-              <div class="carousel-item__info">
-                <div class="carousel-item__container">
-                  <h2 class="carousel-item__subtitle">The grand moment </h2>
-                  <h1 class="carousel-item__title">Le tour</h1>
-                  <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem aperiam.</p>
-                  <a href="#" class="carousel-item__btn">Explore the tour</a>
+     <section id="banner" class="d-flex justify-content-center align-items-center text-center text-white">
+     <!-- <div class="container"> -->
+        <div class="page-wrap">
+          <div id="home-slider" style="max-height:400px;">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-one">
+                  <div class="swiper-image" data-swiper-parallax-y="-20%">
+                    <div class="swiper-image-inner swiper-image-left swiper-image-one">
+                      <h1>A <span class="emphasis">Breath</span>. <br><span>Of Fresh Air.</span></h1>
+                      <p>Chapter I, page XV</p>
+                    </div>
+                  </div>
+                  <div class="swiper-image" data-swiper-parallax-y="35%">
+                    <div class="swiper-image-inner swiper-image-right swiper-image-two">
+                      <p class="paragraph">
+                        A Prophet sat in the market-place and told the fortunes of all who cared to engage his services. Suddenly there came running up one who told him that his house had been broken into by thieves, and that they had made off with everything they could lay
+                        hands on.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-two">
+                  <div class="swiper-image" data-swiper-parallax-y="-20%">
+                    <div class="swiper-image-inner swiper-image-left swiper-image-three">
+                      <h1>The <span class="emphasis">Drop</span>. <br><span>Of Eternal life.</span></h1>
+                      <p>Chapter II, page VII</p>
+                    </div>
+                  </div>
+                  <div class="swiper-image" data-swiper-parallax-y="35%">
+                    <div class="swiper-image-inner swiper-image-right swiper-image-four">
+                      <p class="paragraph">
+                        A thirsty Crow found a Pitcher with some water in it, but so little was there that, try as she might, she could not reach it with her beak, and it seemed as though she would die of thirst within sight of the remedy.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-three">
+                  <div class="swiper-image" data-swiper-parallax-y="-20%">
+                    <div class="swiper-image-inner swiper-image-left swiper-image-five">
+                      <h1>A <span class="emphasis">Sense</span>. <br><span>Of Things to Come.</span></h1>
+                      <p>Chapter III, page XI</p>
+                    </div>
+                  </div>
+                  <div class="swiper-image" data-swiper-parallax-y="35%">
+                    <div class="swiper-image-inner swiper-image-right swiper-image-six">
+                      <p class="paragraph">
+                        Every man carries Two Bags about with him, one in front and one behind, and both are packed full of faults. The Bag in front contains his neighbours’ faults, the one behind his own. Hence it is that men do not see their own faults, but never fail to see
+                        those of others.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="carousel-item carousel-item--2">
-              <div class="carousel-item__image"></div>
-              <div class="carousel-item__info">
-                <div class="carousel-item__container">
-                  <h2 class="carousel-item__subtitle">The big window </h2>
-                  <h1 class="carousel-item__title">Minimal window</h1>
-                  <p class="carousel-item__description">Clear Glass Window With Brown and White Wooden Frame iste natus
-                    error sit voluptatem accusantium doloremque laudantium.</p>
-                  <a href="#" class="carousel-item__btn">Read the article</a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item carousel-item--3">
-              <div class="carousel-item__image"></div>
-              <div class="carousel-item__info">
-                <div class="carousel-item__container">
-                  <h2 class="carousel-item__subtitle">Tropical palms </h2>
-                  <h1 class="carousel-item__title">Palms</h1>
-                  <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem aperiam.</p>
-                  <a href="#" class="carousel-item__btn">Explore the palms</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item carousel-item--4">
-              <div class="carousel-item__image"></div>
-              <div class="carousel-item__info">
-                <div class="carousel-item__container">
-                  <h2 class="carousel-item__subtitle">Beach </h2>
-                  <h1 class="carousel-item__title">The beach </h1>
-                  <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem aperiam.</p>
-                  <a href="#" class="carousel-item__btn">Explore the beach</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item carousel-item--5">
-              <div class="carousel-item__image"></div>
-              <div class="carousel-item__info">
-                <div class="carousel-item__container">
-                  <h2 class="carousel-item__subtitle">The white building </h2>
-                  <h1 class="carousel-item__title">White building</h1>
-                  <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem aperiam.</p>
-                  <a href="#" class="carousel-item__btn">Read the article</a>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
-
-
-      </div>
+      <!-- </div>-->
     </section>
     <section id="about" class="py-5">
       <div class="container">
@@ -253,30 +218,49 @@
         <div class="row">
           <div class="col-md-6">
             <blockquote class="blockquote">
-              <p class="mb-0">"Funny, wise, heartfelt, healing, vibrant and innovative. Dr. Stacey Kerr just makes you wanna jump on a bike and ride. Her adventures in motorcycle riding, friendship, healing, being a parent, a daughter and ultimately a beloved to herself, all allow us to catch a glimpse of what it means to live a truly authentic, vibrant life."</p>
+              <p class="mb-0">"Funny, wise, heartfelt, healing, vibrant and innovative. Dr. Stacey Kerr just makes you
+                wanna jump on a bike and ride. Her adventures in motorcycle riding, friendship, healing, being a parent,
+                a daughter and ultimately a beloved to herself, all allow us to catch a glimpse of what it means to live
+                a truly authentic, vibrant life."</p>
               <footer class="blockquote-footer">Tanya Taylor Rubinstein, Founder - Somatic Writing</footer>
             </blockquote>
           </div>
           <div class="col-md-6">
             <blockquote class="blockquote">
-              <p class="mb-0">"I read and rode along with Dr. Kerr in Wild Heart, and loved the ride! I loved that she named her motorcycles; the emotional connection to her wheels came through strong and clear, along with her beautiful writing – a winning combination that pulled me right along with her. I loved that she grew and gained confidence, realizing that she always had that power within but it just needed to come out.
-                I could totally relate to “wanting fun without filters” and to “when I rode I forgot about being fragile - I felt strong and capable and brave.”
-                No one starts out as an expert rider, and Dr. Kerr wasn’t afraid to admit she was scared. Stepping out of our comfort zones and doing things that are scary are where we gain the most personal growth and confidence.  Stacey really did that and I felt like I was riding with her, cheering her on!  
-                I had so much fun reading this advance copy that I went back and read it twice! Such an inspiring read for anyone! I think books like this can make a difference, illustrating that anything is possible if you put your mind to it and open your heart. I can’t help but feel proud of her!"</p>
+              <p class="mb-0">"I read and rode along with Dr. Kerr in Wild Heart, and loved the ride! I loved that she
+                named her motorcycles; the emotional connection to her wheels came through strong and clear, along with
+                her beautiful writing – a winning combination that pulled me right along with her. I loved that she grew
+                and gained confidence, realizing that she always had that power within but it just needed to come out.
+                I could totally relate to “wanting fun without filters” and to “when I rode I forgot about being fragile
+                - I felt strong and capable and brave.”
+                No one starts out as an expert rider, and Dr. Kerr wasn’t afraid to admit she was scared. Stepping out
+                of our comfort zones and doing things that are scary are where we gain the most personal growth and
+                confidence. Stacey really did that and I felt like I was riding with her, cheering her on!
+                I had so much fun reading this advance copy that I went back and read it twice! Such an inspiring read
+                for anyone! I think books like this can make a difference, illustrating that anything is possible if you
+                put your mind to it and open your heart. I can’t help but feel proud of her!"</p>
               <footer class="blockquote-footer">Cris Sommer Simmons, Journalist & Author - Moto<br>
-                <small>National Motorcycle Museum Hall of Fame, Sturgis Hall of Fame, AMA Hall of Fame, Top 100 women in PowerSports</small>
+                <small>National Motorcycle Museum Hall of Fame, Sturgis Hall of Fame, AMA Hall of Fame, Top 100 women in
+                  PowerSports</small>
               </footer>
             </blockquote>
           </div>
           <div class="col-md-6">
             <blockquote class="blockquote">
-              <p class="mb-0">"If you're ready for a tour through the rolling hills and the valleys of 1960s and 70s culture, hitch a ride on the back of Dr. Stacey Kerr's motorcycle and for on a whirlwind tour of her life as a hippie mama, family doctor, medical cannabis practitioner and teacher. Full of fun, western landscapes and just enough redemption to keep you coming back for more."</p>
+              <p class="mb-0">"If you're ready for a tour through the rolling hills and the valleys of 1960s and 70s
+                culture, hitch a ride on the back of Dr. Stacey Kerr's motorcycle and for on a whirlwind tour of her
+                life as a hippie mama, family doctor, medical cannabis practitioner and teacher. Full of fun, western
+                landscapes and just enough redemption to keep you coming back for more."</p>
               <footer class="blockquote-footer">Joe Dolce, Author - Brave New World</footer>
             </blockquote>
           </div>
           <div class="col-md-6">
             <blockquote class="blockquote">
-              <p class="mb-0">"Stacey Kerr is my kind of woman (and writer). Sharp, dedicated enough to become a doctor and wild enough to saddle up a Harley Davidson and lean into the turns in her search for freedom. The book’s a delight, and made me wish I knew her personally. As a man who built and rode motorcycles until I was 78 I share her affection for them. I’m delighted to recommend this book, especially to women who may be pondering what their search for freedom and service might become.”</p>
+              <p class="mb-0">"Stacey Kerr is my kind of woman (and writer). Sharp, dedicated enough to become a doctor
+                and wild enough to saddle up a Harley Davidson and lean into the turns in her search for freedom. The
+                book’s a delight, and made me wish I knew her personally. As a man who built and rode motorcycles until
+                I was 78 I share her affection for them. I’m delighted to recommend this book, especially to women who
+                may be pondering what their search for freedom and service might become.”</p>
               <footer class="blockquote-footer">Peter Coyote, Actor & Author, Zen Buddhist Priest, ex-biker</footer>
             </blockquote>
           </div>
@@ -321,6 +305,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
   <script src="book.js"></script>
   <script>
     // Get the modal element
