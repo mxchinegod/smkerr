@@ -38,7 +38,10 @@
       opacity: 0;
       transition: opacity 500ms;
     }
-    a { text-decoration: none; }
+
+    a {
+      text-decoration: none;
+    }
   </style>
   <link href="book.css" rel="stylesheet">
 
@@ -59,73 +62,80 @@
       <nav class="text-light">
         <ul class="list-unstyled d-flex mb-0">
           <li class="mx-3"><a href="#">Home</a></li>
-          <li class="mx-3"><a href="#">About</a></li>
-          <li class="mx-3"><a href="#">Books</a></li>
-          <li class="mx-3"><a href="#">Blog</a></li>
-          <li class="mx-3"><a href="#">Contact</a></li>
+          <li class="mx-3"><a href="#about">About</a></li>
+          <li class="mx-3"><a href="#books">Books</a></li>
+          <li class="mx-3"><a href="">Blog</a></li>
+          <li class="mx-3"><a href="mailto:drkerr@smkerr.com">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main>
-     <section id="banner" class="d-flex justify-content-center align-items-center text-center text-white">
-     <!-- <div class="container"> -->
-        <div class="page-wrap">
-          <div id="home-slider" style="max-height:400px;">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-slide-one">
-                  <div class="swiper-image" data-swiper-parallax-y="-20%">
-                    <div class="swiper-image-inner swiper-image-left swiper-image-one">
-                      <h1>A <span class="emphasis">Breath</span>. <br><span>Of Fresh Air.</span></h1>
-                      <p>Chapter I, page XV</p>
-                    </div>
-                  </div>
-                  <div class="swiper-image" data-swiper-parallax-y="35%">
-                    <div class="swiper-image-inner swiper-image-right swiper-image-two">
-                      <p class="paragraph">
-                        A Prophet sat in the market-place and told the fortunes of all who cared to engage his services. Suddenly there came running up one who told him that his house had been broken into by thieves, and that they had made off with everything they could lay
-                        hands on.
-                      </p>
-                    </div>
+    <section id="banner" class="d-flex justify-content-center align-items-center text-center text-white">
+      <!-- <div class="container"> -->
+      <div class="page-wrap">
+        <div id="home-slider" style="max-height:400px;">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide-one">
+                <div class="swiper-image" data-swiper-parallax-y="-20%">
+                  <div class="swiper-image-inner swiper-image-left swiper-image-one">
+                    <h1>A <span class="emphasis">Breath</span>. <br><span>Of Fresh Air.</span></h1>
+                    <p>Chapter I, page XV</p>
                   </div>
                 </div>
-                <div class="swiper-slide swiper-slide-two">
-                  <div class="swiper-image" data-swiper-parallax-y="-20%">
-                    <div class="swiper-image-inner swiper-image-left swiper-image-three">
-                      <h1>The <span class="emphasis">Drop</span>. <br><span>Of Eternal life.</span></h1>
-                      <p>Chapter II, page VII</p>
-                    </div>
-                  </div>
-                  <div class="swiper-image" data-swiper-parallax-y="35%">
-                    <div class="swiper-image-inner swiper-image-right swiper-image-four">
-                      <p class="paragraph">
-                        A thirsty Crow found a Pitcher with some water in it, but so little was there that, try as she might, she could not reach it with her beak, and it seemed as though she would die of thirst within sight of the remedy.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide swiper-slide-three">
-                  <div class="swiper-image" data-swiper-parallax-y="-20%">
-                    <div class="swiper-image-inner swiper-image-left swiper-image-five">
-                      <h1>A <span class="emphasis">Sense</span>. <br><span>Of Things to Come.</span></h1>
-                      <p>Chapter III, page XI</p>
-                    </div>
-                  </div>
-                  <div class="swiper-image" data-swiper-parallax-y="35%">
-                    <div class="swiper-image-inner swiper-image-right swiper-image-six">
-                      <p class="paragraph">
-                        Every man carries Two Bags about with him, one in front and one behind, and both are packed full of faults. The Bag in front contains his neighbours’ faults, the one behind his own. Hence it is that men do not see their own faults, but never fail to see
-                        those of others.
-                      </p>
-                    </div>
+                <div class="swiper-image" data-swiper-parallax-y="35%">
+                  <div class="swiper-image-inner swiper-image-right swiper-image-two">
+                    <p class="paragraph">
+                      A Prophet sat in the market-place and told the fortunes of all who cared to engage his services.
+                      Suddenly there came running up one who told him that his house had been broken into by thieves,
+                      and that they had made off with everything they could lay
+                      hands on.
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
+              <div class="swiper-slide swiper-slide-two">
+                <div class="swiper-image" data-swiper-parallax-y="-20%">
+                  <div class="swiper-image-inner swiper-image-left swiper-image-three">
+                    <h1>The <span class="emphasis">Drop</span>. <br><span>Of Eternal life.</span></h1>
+                    <p>Chapter II, page VII</p>
+                  </div>
+                </div>
+                <div class="swiper-image" data-swiper-parallax-y="35%">
+                  <div class="swiper-image-inner swiper-image-right swiper-image-four">
+                    <p class="paragraph">
+                      A thirsty Crow found a Pitcher with some water in it, but so little was there that, try as she
+                      might, she could not reach it with her beak, and it seemed as though she would die of thirst
+                      within sight of the remedy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-three">
+                <div class="swiper-image" data-swiper-parallax-y="-20%">
+                  <div class="swiper-image-inner swiper-image-left swiper-image-five">
+                    <h1>A <span class="emphasis">Sense</span>. <br><span>Of Things to Come.</span></h1>
+                    <p>Chapter III, page XI</p>
+                  </div>
+                </div>
+                <div class="swiper-image" data-swiper-parallax-y="35%">
+                  <div class="swiper-image-inner swiper-image-right swiper-image-six">
+                    <p class="paragraph">
+                      Every man carries Two Bags about with him, one in front and one behind, and both are packed full
+                      of faults. The Bag in front contains his neighbours’ faults, the one behind his own. Hence it is
+                      that men do not see their own faults, but never fail to see
+                      those of others.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
+      </div>
       <!-- </div>-->
     </section>
     <section id="about" class="py-5">
@@ -168,7 +178,7 @@
                   it safe. Instead, she bought her first Harley. Over the next fourteen years, Stacey and her two best
                   friends decided to give the finger to aging gracefully, ultimately embarking on seven epic motorcycle
                   tours throughout the western United States filled with drama, introspection, and pure joy. </p>
-                <button class="heart-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button class="heart-button" data-bs-toggle="popover" title="Choose a store" data-bs-content='<a href="https://www.goodreads.com/book/show/123251263-wild-heart">GoodReads</a> | <a href="https://www.amazon.com/Wild-Heart-Hippies-Healers-Harleys/dp/1959411306/">Amazon</a> | <a href="https://www.barnesandnoble.com/w/wild-heart-stacey-marie-kerr-md/1143106304">Barnes & Noble</a>' id="mainBuy">
                   <div class="heart-flip"></div>
                   <span>Buy <span>Autographed!</span></span>
                 </button>
@@ -185,7 +195,7 @@
                   hospital setting. This book presents 15 powerful testimonies about this kind of emotionally satisfying
                   birth. The stories show that expectant mothers can minimise fear and put technology where it belongs.
                 </p>
-                <button class="heart-button" data-bs-toggle="modal" data-bs-target="#hbhModal">
+                <button class="heart-button" data-bs-toggle="popover" title="Choose a store" data-bs-content='<a href="https://www.goodreads.com/book/show/4067653-homebirth-in-the-hospital">GoodReads</a> | <a href="https://www.amazon.com/Homebirth-Hospital-Integrating-Childbirth-Medicine/dp/1591810779">Amazon</a> | <a href="https://www.barnesandnoble.com/w/homebirth-in-the-hospital-stacey-marie-kerr/1111211964">Barnes & Noble</a>'>
                   <div class="heart-flip"></div>
                   <span>Buy</span>
                 </button>
@@ -205,10 +215,13 @@
               <div class="heart-flip"></div>
               <span>Facebook <span> Share!</span></span>
             </button>
-            <button class="heart-button">
-              <div class="heart-flip"></div>
-              <span>Instagram <span> Look!</span></span>
-            </button>
+            <a href="https://instagram.com/amaxoxorainforest" target="_blank">
+              <button class="heart-button">
+                <div class="heart-flip"></div>
+                <span>Instagram <span> Look!</span></span>
+              </button>
+            </a>
+            
           </div>
         </div>
       </div>
@@ -223,7 +236,7 @@
                 wanna jump on a bike and ride. Her adventures in motorcycle riding, friendship, healing, being a parent,
                 a daughter and ultimately a beloved to herself, all allow us to catch a glimpse of what it means to live
                 a truly authentic, vibrant life."</p>
-                <br>
+              <br>
               <footer class="blockquote-footer">Tanya Taylor Rubinstein, Founder - Somatic Writing</footer>
             </blockquote>
           </div>
@@ -241,7 +254,7 @@
                 I had so much fun reading this advance copy that I went back and read it twice! Such an inspiring read
                 for anyone! I think books like this can make a difference, illustrating that anything is possible if you
                 put your mind to it and open your heart. I can’t help but feel proud of her!"</p>
-                <br>
+              <br>
               <footer class="blockquote-footer">Cris Sommer Simmons, Journalist & Author - Moto<br>
                 <small>National Motorcycle Museum Hall of Fame, Sturgis Hall of Fame, AMA Hall of Fame, Top 100 women in
                   PowerSports</small>
@@ -254,7 +267,7 @@
                 culture, hitch a ride on the back of Dr. Stacey Kerr's motorcycle and for on a whirlwind tour of her
                 life as a hippie mama, family doctor, medical cannabis practitioner and teacher. Full of fun, western
                 landscapes and just enough redemption to keep you coming back for more."</p>
-                <br>
+              <br>
               <footer class="blockquote-footer">Joe Dolce, Author - Brave New World</footer>
             </blockquote>
           </div>
@@ -265,7 +278,7 @@
                 book’s a delight, and made me wish I knew her personally. As a man who built and rode motorcycles until
                 I was 78 I share her affection for them. I’m delighted to recommend this book, especially to women who
                 may be pondering what their search for freedom and service might become.”</p>
-                <br>
+              <br>
               <footer class="blockquote-footer">Peter Coyote, Actor & Author, Zen Buddhist Priest, ex-biker</footer>
             </blockquote>
           </div>
@@ -313,6 +326,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
   <script src="book.js"></script>
   <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl, options={html : true})
+    })
     // Get the modal element
     var modal = document.getElementById('myModal');
 
