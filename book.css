@@ -30,27 +30,27 @@ Home Slider
 }
 
 .swiper-image-one {
-  background-image: url(img/slide1.jpg);
-}
-
-.swiper-image-two {
   background-image: url(img/slide2.jpg);
 }
 
-.swiper-image-three {
-  background-image: url(img/slide3.jpg);
+.swiper-image-two {
+  background-image: url(img/slide1.jpg);
 }
 
-.swiper-image-four {
+.swiper-image-three {
   background-image: url(img/slide4.jpeg);
 }
 
+.swiper-image-four {
+  background-image: url(img/slide3.jpg);
+}
+
 .swiper-image-five {
-  background-image: url(img/slide5.jpeg);
+  background-image: url(img/slide6.jpeg);
 }
 
 .swiper-image-six {
-  background-image: url(img/slide6.jpeg);
+  background-image: url(img/slide5.jpeg);
 }
 
 .swiper-image {
