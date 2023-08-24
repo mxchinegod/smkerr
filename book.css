@@ -53,10 +53,35 @@ Home Slider
   background-image: url(img/slide5.jpeg);
 }
 
+.swiper-image-seven {
+  background-image: url(img/slide2.jpg);
+}
+
+.swiper-image-eight {
+  background-image: url(img/slide1.jpg);
+}
+
+.swiper-image-nine {
+  background-image: url(img/slide4.jpeg);
+}
+
+.swiper-image-ten {
+  background-image: url(img/slide3.jpg);
+}
+
+.swiper-image-eleven {
+  background-image: url(img/slide6.jpeg);
+}
+
+.swiper-image-twelve {
+  background-image: url(img/slide5.jpeg);
+}
+
 .swiper-image {
   width: 50%;
   height: 100%;
 }
+
 .swiper-image-inner {
   background-size: cover;
   background-position: center center;
